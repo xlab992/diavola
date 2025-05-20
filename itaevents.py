@@ -101,21 +101,22 @@ def get_dynamic_logo(event_name):
         load_local_logos() # Ensure local logos are loaded
 
         # --- Nuova logica per cercare nomi squadre negli URL locali ---
-        if LOCAL_LOGO_CACHE:
-            team1_lower = team1.lower() if team1 else ""
-            team2_lower = team2.lower() if team2 else ""
-
+        if LOCAL_LOGO_CACHE and team1 and team2: # Ensure teams were extracted
+            # Normalize team names for local file lookup (replace spaces with hyphens)
+            team1_normalized_for_lookup = team1.lower().replace(" ", "-")
+            team2_normalized_for_lookup = team2.lower().replace(" ", "-")
+    
             for logo_url in LOCAL_LOGO_CACHE:
                 logo_url_lower = logo_url.lower()
-                # Check if both team names are in the URL (case-insensitive)
-                if team1_lower and team2_lower and team1_lower in logo_url_lower and team2_lower in logo_url_lower:
+                # Check if both normalized team names are in the URL (case-insensitive)
+                if team1_normalized_for_lookup in logo_url_lower and team2_normalized_for_lookup in logo_url_lower:
                      print(f"Logo trovato nel file locale per: {cache_key} -> {logo_url}")
                      # Add to main cache for future use
                      if cache_key:
                          LOGO_CACHE[cache_key] = logo_url
                      return logo_url
-                # Check if at least one team name is in the URL (partial match fallback)
-                elif (team1_lower and team1_lower in logo_url_lower) or (team2_lower and team2_lower in logo_url_lower):
+                # Check if at least one normalized team name is in the URL (partial match fallback)
+                elif team1_normalized_for_lookup in logo_url_lower or team2_normalized_for_lookup in logo_url_lower:
                      print(f"Logo parziale trovato nel file locale per: {cache_key} -> {logo_url}")
                      # Add to main cache for future use
                      if cache_key:
