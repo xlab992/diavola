@@ -12,7 +12,7 @@ import time
 import re
 from urllib.parse import quote_plus  # Add this import
 
-PRXLINK = "" # non mettere lo / finale
+PRXLINK = "https://xlab992-ddl.hf.space" # non mettere lo / finale
 
 # Constants
 REFERER = "forcedtoplay.xyz"
