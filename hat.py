@@ -10,7 +10,7 @@ import time
 import html
 from urllib.parse import urljoin
 
-MFPLINK = "https://xlab992-bb.hf.space"
+MFPLINK = "https://luca-9lxa.onrender.com"
 MFPPSW = "gf4"
 
 # Funzioni dal tuo mpd_decoder.py
