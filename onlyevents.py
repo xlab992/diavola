@@ -9,7 +9,8 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-PRXLINK = "" # non mettere lo / finale
+PRXLINK = "http://nsaxdhyv-rotate:x6jqsk51dg8y@p.webshare.io:80" 
+
 
 # Costanti
 NUM_CHANNELS = 10000
