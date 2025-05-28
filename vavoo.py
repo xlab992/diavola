@@ -3,10 +3,10 @@ import json
 import re
 import os
 
-USREPG = "elwood65"
-BRANCHEPG = "ddprx"
-MFPLINK = "https://elwood65-vadase.hf.space"
-MFPPSW = "shadow65"
+USREPG = "xlab992"
+BRANCHEPG = "diavola"
+MFPLINK = "https://xlab992-bb.hf.space"
+MFPPSW = "gf4"
 
 
 PROXY = f"{MFPLINK}/proxy/hls/manifest.m3u8?api_password={MFPPSW}&d="
