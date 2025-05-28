@@ -9,7 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
-PRXLINK = "http://nsaxdhyv-rotate:x6jqsk51dg8y@p.webshare.io:80" 
+PRXLINK = "https://xlab992-ddl.hf.space" 
 
 
 # Costanti
