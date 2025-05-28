@@ -12,7 +12,7 @@ import time
 import re
 from urllib.parse import quote_plus  # Add this import
 
-PRXLINK ="http://nsaxdhyv-rotate:x6jqsk51dg8y@p.webshare.io:80" 
+PRXLINK ="https://xlab992-ddl.hf.space" 
 
 
 # Constants
