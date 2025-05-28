@@ -10,7 +10,7 @@ import time
 import html
 from urllib.parse import urljoin
 
-MFPLINK = "https://elwood65-vadase.hf.space"
+MFPLINK = "https://xlab992-bb.hf.space"
 
 # Funzioni dal tuo mpd_decoder.py
 def extract_mpd_link_from_page(url):
